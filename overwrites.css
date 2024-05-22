@@ -1,0 +1,48 @@
+[data-tid="experience-layout"] {
+    display: flex;
+    width: 100dvw;
+    max-width: 100dvw;
+    align-items: stretch;
+}
+
+[data-tid="app-layout-area--title-bar"], [data-tid="ubar-indicators"], [data-tid="app-layout-area--notifications"], [data-tid="app-layout-area--nav"] {
+    display: none;
+}
+
+[data-tid="app-layout-area--header"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: transparent;
+    transition: 300ms ease-in-out;
+
+    > div {
+        background-color: transparent;
+    }
+
+    :hover {
+        background-color: var(--colorNeutralBackground1);
+        opacity: 100%;
+    }
+}
+
+[data-tid="ubar-toolbar-wrapper"] {
+    box-shadow: none;
+    grid-template-columns: fit-content(100%) fit-content(100%);
+    transition: 300ms ease-in-out;
+    opacity: 20%;
+}
+
+[data-tid="slot-measurer"] {
+    background-color: transparent;
+}
+
+.fui-MenuPopover, .fui-PopoverSurface {
+    background-color: var(--colorNeutralBackground1);
+}
+
+[data-tid="app-layout-area--main"] {
+    min-width: 100%;
+    max-width: 100%;
+}
