@@ -5,7 +5,11 @@
     align-items: stretch;
 }
 
-[data-tid="app-layout-area--title-bar"], [data-tid="ubar-indicators"], [data-tid="app-layout-area--notifications"], [data-tid="app-layout-area--nav"] {
+[data-tid="app-layout-area--title-bar"],
+[data-tid="ubar-indicators"],
+[data-tid="app-layout-area--notifications"],
+[data-tid="app-layout-area--nav"],
+[data-tid="app-layout-area--contextual-notifications"] {
     display: none;
 }
 
